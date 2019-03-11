@@ -1,0 +1,444 @@
+body, html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 83.333%;
+  box-sizing: border-box; }
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    font-size: 2rem; }
+    header nav ul li {
+      margin-right: 30px; }
+      header nav ul li a, header nav ul li a:hover {
+        text-decoration: none;
+        color: #39a38f; }
+  header nav .fb-logo {
+    margin-left: auto;
+    margin-right: 30px; }
+  header nav .hidden-lg {
+    display: none; }
+  header nav .collapsed-menu {
+    display: block;
+    overflow: hidden;
+    height: 0;
+    width: 100%;
+    background-color: white;
+    transition: height 0.8s ease; }
+  header nav .displayed-menu {
+    display: block;
+    margin-bottom: -10px;
+    height: 160px;
+    padding-bottom: 0;
+    transition: height 0.8s ease; }
+  header nav .displayed-list {
+    display: block;
+    padding-left: 0;
+    padding-top: 14px; }
+    header nav .displayed-list li {
+      display: block;
+      margin-bottom: 10px; }
+  header nav .toggler {
+    width: 50px;
+    border: 1px solid #979797;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16pt; }
+
+header .banner {
+  background-image: url("../../assets/graphic/home/background_image.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding-top: 13rem;
+  padding-bottom: 4rem; }
+
+header p {
+  position: relative;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+  font-size: 1.8rem; }
+
+header h1 {
+  font-weight: 800;
+  font-size: 10rem;
+  line-height: 6rem; }
+  header h1 span {
+    font-weight: 400;
+    font-size: 5.4rem; }
+
+header p::after {
+  content: '';
+  background-color: #f0f0f0;
+  width: 30%;
+  height: 1px;
+  position: absolute;
+  display: block;
+  margin-top: 3rem; }
+
+header .link {
+  font-style: italic;
+  font-size: 1.8rem; }
+
+/* ---------------------- header ----------------- */
+main {
+  text-align: center;
+  /* -------------- section-name ----------------- */
+  /* ------------------- intro --------------------- */
+  /* ---------------------------- stats -------------------- */
+  /* --------------- sub-name ------------------- */
+  /* ---------------------------- joinus ------------- */
+  /* --------------------- news ----------------------- */
+  /* ---------------- .contact --------------------*/ }
+  main button {
+    margin-top: 50px;
+    border: none;
+    background-color: white;
+    color: #39a38f;
+    padding: 3px 15px 5px 15px;
+    font-size: 1.2rem;
+    font-weight: bold; }
+  main .section-name {
+    font-weight: 800;
+    font-size: 4.5rem;
+    line-height: 4rem;
+    position: relative;
+    padding-top: 80px;
+    margin-bottom: 60px; }
+    main .section-name span {
+      font-weight: 400;
+      color: #979797;
+      font-size: 3rem; }
+    main .section-name::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100px;
+      left: calc(50% - 50px);
+      height: 1px;
+      background-color: #d8d8d8;
+      margin-top: 30px; }
+  main .intro p {
+    color: #707070;
+    margin-bottom: 50px;
+    font-size: 1.3rem; }
+  main .intro .panel-item {
+    padding-top: 60px;
+    font-size: 1.3rem; }
+    main .intro .panel-item img {
+      height: 120px;
+      width: auto; }
+    main .intro .panel-item h3 {
+      font-size: 1.8rem;
+      margin: 30px 0; }
+      main .intro .panel-item h3 span {
+        color: #39a38f; }
+  main .stats {
+    background-color: #d8d8d8; }
+    main .stats .numbers {
+      padding-bottom: 40px; }
+      main .stats .numbers p {
+        color: #39a38f;
+        padding-top: 50px;
+        font-weight: 800;
+        font-size: 5rem;
+        line-height: 3.5rem; }
+        main .stats .numbers p span {
+          color: #979797;
+          font-weight: 400;
+          font-size: 1.3rem; }
+    main .stats .partners {
+      background-color: #39a38f;
+      padding-bottom: 70px;
+      font-size: 2.7rem;
+      font-weight: 800; }
+      main .stats .partners .section-name, main .stats .partners .section-name span {
+        color: #f0f0f0; }
+      main .stats .partners .section-name span {
+        font-size: 2.3rem;
+        font-weight: 400; }
+      main .stats .partners img {
+        padding-top: 50px;
+        height: 80px;
+        width: auto; }
+  main .sub-name {
+    position: relative;
+    padding-top: 40px;
+    margin-bottom: 60px;
+    font-size: 1.8rem; }
+    main .sub-name span {
+      color: #39a38f; }
+    main .sub-name::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100px;
+      left: calc(50% - 50px);
+      height: 1px;
+      background-color: #d8d8d8;
+      margin-top: 30px; }
+  main .joinus .benefits {
+    padding-bottom: 60px; }
+  main .joinus .benefit {
+    padding-top: 20px;
+    font-size: 1.3rem; }
+  main .joinus .quote {
+    background-color: #39a38f;
+    color: #f0f0f0;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    font-size: 2.1rem; }
+    main .joinus .quote .quote-author {
+      font-size: 1.8rem; }
+  main .news {
+    /* -------------------- news panel --------------------- */ }
+    main .news .news-panel {
+      background-color: #d8d8d8;
+      position: relative;
+      margin-top: 100px;
+      padding-bottom: 50px;
+      /* ------------- news-item ------------------- */ }
+      main .news .news-panel .swiper-container {
+        padding-top: 60px;
+        padding-bottom: 70px; }
+        main .news .news-panel .swiper-container .swiper-button-prev, main .news .news-panel .swiper-container .swiper-button-next {
+          display: none; }
+        main .news .news-panel .swiper-container .swiper-pagination-bullet-active {
+          background: #39a38f; }
+        main .news .news-panel .swiper-container .swiper-pagination-bullets {
+          bottom: 25px; }
+      main .news .news-panel::before {
+        content: '';
+        position: absolute;
+        height: 0;
+        width: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 30px solid #d8d8d8;
+        border-top: 30px solid transparent;
+        left: calc(50% - 30px);
+        top: -60px; }
+      main .news .news-panel .news-item {
+        background-color: white;
+        margin-right: 0px;
+        text-align: left;
+        position: relative; }
+        main .news .news-panel .news-item a {
+          text-decoration: none;
+          color: black; }
+        main .news .news-panel .news-item p.author {
+          font-size: 1.8rem;
+          padding: 20px;
+          margin: 0; }
+          main .news .news-panel .news-item p.author span {
+            font-weight: 300;
+            color: #979797;
+            font-size: 1.3rem; }
+        main .news .news-panel .news-item::after {
+          content: '';
+          display: block;
+          height: 3px;
+          width: 100%;
+          background-color: #39a38f;
+          position: absolute; }
+        main .news .news-panel .news-item img {
+          padding-right: 0px;
+          width: 100%; }
+    main .news button {
+      margin-top: 20px; }
+  main .contact .my-div-icon {
+    height: 40px !important;
+    width: 150px !important;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-origin: content-box;
+    background-color: white;
+    background-image: url("../../assets/graphic/home/rorun_logo.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative; }
+    main .contact .my-div-icon::after {
+      content: '';
+      position: absolute;
+      height: 0;
+      width: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      border-top: 20px solid white;
+      bottom: -40px;
+      left: calc(50% - 20px); }
+  main .contact .map-wrapper {
+    background-color: #d8d8d8;
+    height: 795px;
+    margin-top: 80px;
+    position: relative; }
+    main .contact .map-wrapper #map {
+      width: 100%;
+      height: 400px;
+      z-index: 5;
+      position: absolute; }
+  main .contact .form-wrapper {
+    z-index: 7;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 200px;
+    margin-left: auto;
+    margin-right: auto; }
+  main .contact form {
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: right;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
+    main .contact form label {
+      display: block;
+      margin-top: 15px;
+      font-size: 1.4rem;
+      float: left; }
+    main .contact form input {
+      height: 40px; }
+    main .contact form input, main .contact form textarea {
+      border-radius: 4px;
+      width: 100%;
+      float: left; }
+    main .contact form label::after {
+      position: absolute;
+      content: 'wymagane';
+      font-size: 1rem;
+      color: #39a38f;
+      right: 45px;
+      margin-top: 10px; }
+    main .contact form label:nth-child(5)::after {
+      content: ''; }
+    main .contact form label:nth-child(5) {
+      margin-right: 140px; }
+    main .contact form label:nth-child(7) {
+      margin-right: 130px; }
+    main .contact form .send-bt {
+      border: none;
+      background-color: #39a38f;
+      color: white;
+      border-radius: 0;
+      margin-top: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 40%; }
+
+/* -------------- main --------------------------- */
+footer {
+  background-color: #979797; }
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.1rem;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    footer .container img {
+      height: 100%;
+      width: auto; }
+    footer .container p {
+      margin: 0; }
+  footer .up-arrow {
+    margin-left: -25px; }
+
+@media screen and (max-width: 800px) {
+  html, body {
+    font-size: 55%; }
+  header nav .nav-link {
+    font-size: 2.2rem; }
+  main .intro p {
+    margin-bottom: 30px;
+    font-size: 2rem; }
+  main .intro .panel-item {
+    padding-top: 60px;
+    font-size: 28pt; }
+    main .intro .panel-item img {
+      height: 120px;
+      width: auto; }
+    main .intro .panel-item h3 {
+      font-size: 1.8rem;
+      margin: 30px 0; }
+      main .intro .panel-item h3 span {
+        color: #39a38f; }
+  main .stats .numbers {
+    padding-bottom: 40px; }
+    main .stats .numbers p {
+      padding-top: 50px;
+      font-weight: 800;
+      font-size: 5rem; }
+      main .stats .numbers p span {
+        color: #979797;
+        font-weight: 400;
+        font-size: 2rem; }
+  main .stats .partners {
+    padding-bottom: 60px; }
+  main .joinus {
+    /* --------------- sub-name ------------------- */ }
+    main .joinus .sub-name {
+      position: relative;
+      padding-top: 40px;
+      margin-bottom: 60px;
+      font-size: 2.6rem; }
+      main .joinus .sub-name span {
+        color: #39a38f; }
+      main .joinus .sub-name::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100px;
+        left: calc(50% - 50px);
+        height: 1px;
+        background-color: #d8d8d8;
+        margin-top: 30px; }
+    main .joinus .benefit {
+      padding-top: 20px;
+      font-size: 1.6rem; }
+    main .joinus .quote {
+      background-color: #39a38f;
+      color: #f0f0f0;
+      padding-bottom: 50px;
+      padding-top: 20px;
+      margin-top: 50px;
+      font-size: 1.5rem; }
+      main .joinus .quote .quote-author {
+        font-size: 1.8rem; }
+  main .contact .map-wrapper form label {
+    font-size: 2rem; }
+  main .contact .map-wrapper form input, main .contact .map-wrapper form textarea {
+    font-size: 1.2rem; }
+  footer .container .up-arrow {
+    margin-right: 40px; } }
+
+@media screen and (min-width: 800px) {
+  header .nav .navbar.hidden-lg {
+    display: flex; }
+  .toggler {
+    display: none; }
+  header .nav .fb-logo {
+    margin-left: 0;
+    margin-right: 0; }
+  header .nav ul {
+    font-size: 1.2rem; }
+  main .contact form {
+    width: 80%; }
+  footer .up-arrow {
+    margin-left: -80px; } }

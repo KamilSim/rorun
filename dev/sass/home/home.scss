@@ -1,0 +1,681 @@
+$main_green: #39a38f;
+$white: #f0f0f0;
+$gray_light: #d8d8d8;
+$gray_medium: #979797;
+$gray_dark: #707070;
+$black: #2f2f2f;
+
+
+body, html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 83.333%;
+  box-sizing: border-box;
+}
+
+header {
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    ul {
+      list-style-type: none;
+      // display: flex;
+      margin: 0;
+      font-size: 2rem;
+      
+      li { 
+        margin-right: 30px;
+        
+        a, a:hover { text-decoration: none; color: $main_green; }
+      }
+
+
+      
+    }
+
+    .fb-logo {
+      margin-left: auto;
+      margin-right: 30px;
+    }
+    
+    .hidden-lg {
+      display: none;
+    }
+
+    .collapsed-menu {
+      display: block;
+      overflow: hidden;
+      height: 0;
+      width: 100%;
+      background-color: white;
+      transition: height 0.8s ease;
+    }
+
+    
+    .displayed-menu {
+      display: block;
+      margin-bottom: -10px;
+      height: 160px;
+      padding-bottom: 0;
+      transition: height 0.8s ease;
+    }
+    .displayed-list {
+      display: block;
+      padding-left: 0;
+      padding-top: 14px;
+      li {
+        display: block;
+        margin-bottom: 10px;
+
+      }
+    }
+
+    .toggler  {
+      width: 50px;
+      border: 1px solid $gray_medium;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      // padding: 5px;
+      // padding-top: 12px;
+      font-size: 16pt;
+    }
+  
+  }
+
+
+  .banner {
+    background-image: url('../../assets/graphic/home/background_image.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding-top: 13rem;
+    padding-bottom: 4rem;
+  }
+
+  p {
+    position: relative;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-weight: 800;
+    font-size: 10rem;
+    line-height: 6rem;
+    span {
+      font-weight: 400;
+      font-size: 5.4rem;
+    }
+  }
+
+  p::after {
+    content: '';
+    background-color: $white;
+    width: 30%;
+    height: 1px;
+    position: absolute;
+    display: block;
+    margin-top: 3rem;
+  }
+
+  .link {
+    font-style: italic;
+    font-size: 1.8rem;
+  }
+} /* ---------------------- header ----------------- */
+
+
+main {
+
+  text-align: center;
+
+  button {
+    margin-top: 50px; 
+    border: none; 
+    background-color: white;
+    color: $main_green;
+    padding: 3px 15px 5px 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .section-name {
+
+    font-weight: 800;
+    font-size: 4.5rem;
+    line-height: 4rem;
+    position: relative;
+    padding-top: 80px;
+    margin-bottom: 60px;
+
+    span {
+      font-weight: 400;
+      color: $gray_medium;
+      font-size: 3rem; 
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100px;
+      left: calc(50% - 50px);
+      height: 1px;
+      background-color: $gray_light;
+      margin-top: 30px; 
+
+    }
+  } /* -------------- section-name ----------------- */
+
+  .intro {
+    p { 
+      color: $gray_dark; 
+      margin-bottom: 50px; 
+      font-size: 1.3rem;
+    }
+    
+    .panel-item {
+
+      padding-top: 60px; 
+      font-size: 1.3rem;
+
+      img { height: 120px; width: auto; }
+      
+      h3 { 
+        font-size: 1.8rem;
+        margin: 30px 0;
+        span { color: $main_green; }
+  
+      }
+
+    }
+
+    
+  } /* ------------------- intro --------------------- */
+
+  .stats {
+    background-color: $gray_light;
+
+    .numbers {
+      padding-bottom: 40px;
+      p { 
+        color: $main_green;
+        padding-top: 50px;
+        font-weight: 800;
+        font-size: 5rem;
+        line-height: 3.5rem;
+        span { color: $gray_medium; font-weight: 400; font-size: 1.3rem; }
+      }
+    }
+
+    .partners {
+      background-color: $main_green;
+      padding-bottom: 70px;
+      font-size: 2.7rem;
+      font-weight: 800;
+
+      .section-name, .section-name span { color: $white; }
+
+      .section-name span { font-size: 2.3rem; font-weight: 400;}
+
+      img {
+        padding-top: 50px;
+        height: 80px;
+        width: auto;
+      }
+    }
+  
+
+  } /* ---------------------------- stats -------------------- */
+
+  .sub-name {
+
+    position: relative;
+    padding-top: 40px;
+    margin-bottom: 60px;
+    font-size: 1.8rem;
+    
+
+    span {
+      color: $main_green;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100px;
+      left: calc(50% - 50px);
+      height: 1px;
+      background-color: $gray_light;
+      margin-top: 30px; 
+
+    }
+  } /* --------------- sub-name ------------------- */
+
+  .joinus {
+    
+    .benefits { padding-bottom: 60px;}
+    .benefit { padding-top: 20px; font-size: 1.3rem; }
+
+    .quote {
+      background-color: $main_green;
+      color: $white;
+      padding-bottom: 50px;
+      padding-top: 20px;
+      font-size: 2.1rem;
+
+      .quote-author {font-size: 1.8rem;}
+
+    }
+  } /* ---------------------------- joinus ------------- */
+
+  .news {
+
+    .news-panel {
+      background-color: $gray_light;
+      position: relative;
+      margin-top: 100px;
+      padding-bottom: 50px;
+
+      
+      .swiper-container {
+        padding-top: 60px;
+        padding-bottom: 70px;
+
+        .swiper-button-prev , .swiper-button-next {display: none;}
+    
+        
+        .swiper-pagination-bullet-active { background: $main_green;}
+        .swiper-pagination-bullets {bottom: 25px;}
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        height: 0;
+        width: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 30px solid $gray_light;
+        border-top: 30px solid transparent;
+        left: calc(50% - 30px);
+        top: -60px;
+      }
+
+      .news-item {
+        background-color: white;
+        margin-right: 0px ;
+        text-align: left;
+        position: relative;
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        p.author {
+          font-size: 1.8rem; 
+          padding: 20px;
+          margin: 0;
+          span {font-weight: 300; color:$gray_medium; font-size: 1.3rem;}
+
+        }
+
+        &::after {
+          content: '';
+          display: block;
+          height: 3px;
+          width: 100%;
+          background-color: $main_green;
+          position: absolute;
+        }
+
+         img {
+          padding-right: 0px;
+          width: 100%;
+          // max-width: 300px;
+        }
+      } /* ------------- news-item ------------------- */
+
+    } /* -------------------- news panel --------------------- */
+
+    button {
+      margin-top: 20px
+    }
+
+
+  } /* --------------------- news ----------------------- */
+
+  
+
+  .contact {
+      
+    
+      .my-div-icon {
+        height:  40px !important;
+        width: 150px !important;
+        // border: 5px solid white;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-origin: content-box;
+        background-color:white;
+        background-image: url('../../assets/graphic/home/rorun_logo.jpg');
+        background-repeat: no-repeat; 
+        background-size: contain;
+        background-position: center;
+        position: relative;
+
+        &::after{
+          content: '';
+          position: absolute;
+          height: 0;
+          width: 0;
+          border-left: 20px solid transparent;
+          border-right: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+          border-top: 20px solid white;
+          bottom: -40px;
+          left: calc(50% - 20px);
+        }
+
+      }
+    
+      //  position: relative;
+    
+    .map-wrapper {
+
+      background-color: $gray_light;
+      height: 795px;
+      margin-top: 80px;
+      position: relative;
+
+
+      #map { 
+        width: 100%;
+        height: 400px;
+        z-index: 5;
+        position: absolute;
+      }
+    }
+
+    .form-wrapper {
+      z-index: 7;
+      position: absolute;
+       left: 0; 
+       right: 0; 
+      top: 200px;
+      
+      margin-left: auto; 
+      margin-right: auto; 
+    }
+
+    form {
+      background-color: white;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      padding-left: 40px;
+      padding-right: 40px; 
+      text-align: right;
+      // z-index: 10;
+       position: relative; 
+      // left: 0; 
+      // right: 0; 
+      // top: 300px;
+      
+      margin-left: auto; 
+      margin-right: auto; 
+      width: 100%;
+      
+
+      label {
+        display: block;
+        margin-top: 15px;
+        font-size: 1.4rem;
+        // width: 80%;
+        float: left;
+        // margin-right: 110px;
+        // position: relative;
+        
+        
+      }
+      input {height: 40px;}
+      input, textarea {
+        border-radius: 4px;
+        width: 100%;
+        float: left;
+  
+      }
+
+      label::after {
+         position: absolute;
+        content: 'wymagane';
+      
+        font-size: 1rem;
+        color: $main_green;
+        right: 45px;
+        margin-top: 10px;
+
+      }
+
+      label:nth-child(5)::after{
+        content: '';
+      }
+
+      label:nth-child(5){
+        margin-right: 140px;
+      }
+
+      label:nth-child(7){
+        margin-right: 130px;
+      }
+    
+      .send-bt {
+        border: none;
+        background-color: $main_green;
+        color: white;
+        border-radius: 0;
+        margin-top: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 40%;
+      }
+
+    }
+
+
+
+  } /* ---------------- .contact --------------------*/
+
+
+
+} /* -------------- main --------------------------- */
+
+
+footer {
+  background-color: $gray_medium;
+  
+  .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 1.1rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+
+  p {margin:0;}
+  }
+
+  .up-arrow {
+    margin-left: -25px;
+  }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px ) {
+  html, body {
+    font-size: 55%;
+  }
+
+
+  header {
+    nav {
+      .nav-link  {font-size: 2.2rem;}
+    }
+  }
+
+   main .intro {
+    p { 
+      margin-bottom: 30px; 
+      font-size: 2rem;
+    }
+    
+    .panel-item {
+
+      padding-top: 60px; 
+      font-size: 28pt;
+
+      img { height: 120px; width: auto; }
+      
+      h3 { 
+        font-size: 1.8rem;
+        margin: 30px 0;
+        span { color: $main_green; }
+  
+      }
+
+    }
+  }
+
+   main .stats {
+
+    .numbers {
+      padding-bottom: 40px;
+      p { 
+        padding-top: 50px;
+        font-weight: 800;
+        font-size: 5rem;
+        span { color: $gray_medium; font-weight: 400; font-size: 2rem; }
+      }
+    }
+
+    .partners {
+      padding-bottom: 60px;
+    }
+  }
+
+   main .joinus {
+
+    .sub-name {
+
+      position: relative;
+      padding-top: 40px;
+      margin-bottom: 60px;
+      font-size: 2.6rem;
+      
+  
+      span {
+        color: $main_green;
+      }
+  
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100px;
+        left: calc(50% - 50px);
+        height: 1px;
+        background-color: $gray_light;
+        margin-top: 30px; 
+  
+      }
+    } /* --------------- sub-name ------------------- */
+
+    .benefit { padding-top: 20px; font-size: 1.6rem; }
+
+    .quote {
+      background-color: $main_green;
+      color: $white;
+      padding-bottom: 50px;
+      padding-top: 20px;
+      margin-top: 50px;
+      font-size: 1.5rem;
+
+      .quote-author {font-size: 1.8rem;}
+
+    }
+  }
+
+  main .contact .map-wrapper { 
+  
+    form {
+     label {font-size: 2rem;}
+     input, textarea {font-size: 1.2rem;}
+    // .send-bt {font-size: 1.7rem;}
+    // label::before{ position: absolute; font-size: 1.1rem; left: 170px; top: 16px;}
+
+    // label:nth-child(5)::before{
+    //   content: '';
+    // }
+    }
+    
+  }
+
+  footer .container {
+
+    .up-arrow { margin-right: 40px;}
+
+  }
+
+}
+
+
+
+@media screen and (min-width: 800px ) {
+  
+  header .nav .navbar.hidden-lg {
+    display: flex;
+  }
+
+  .toggler {
+    display: none;   
+  }
+
+  header .nav {
+    .fb-logo {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    ul {
+      font-size: 1.2rem;
+    }
+  }
+  main .contact form {
+    width: 80%;
+  }
+
+  footer .up-arrow {
+    margin-left: -80px;
+  }
+
+}

@@ -1,0 +1,62 @@
+header .banner.about {
+  background-image: url("../../assets/graphic/about/background_image.jpg"); }
+  header .banner.about h1 {
+    font-size: 5rem; }
+
+main .description p.below {
+  font-size: 1.5rem;
+  margin-bottom: 50px; }
+
+main .description .stat .phone {
+  text-align: center; }
+
+main .description .stat p.example {
+  color: #39a38f;
+  font-size: 6rem;
+  font-weight: 800;
+  margin-top: 50px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px; }
+  main .description .stat p.example span {
+    font-size: 2rem;
+    color: #d8d8d8; }
+
+main .description .stat p.desc {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 50px; }
+
+main .news.about .news-panel {
+  padding-top: 50px;
+  padding-bottom: 30px; }
+  main .news.about .news-panel .news-item {
+    margin-bottom: 30px; }
+
+main .news.about .team-info {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-top: 80px;
+  margin-bottom: 60px; }
+
+main .joinus.about .quote {
+  margin-top: 110px; }
+  main .joinus.about .quote button {
+    padding: 5px 40px; }
+
+@media screen and (min-width: 800px) {
+  main .description .stat .phone {
+    text-align: right;
+    padding-right: 70px; }
+  main .description .stat p.example {
+    margin-top: 80px;
+    font-size: 4rem;
+    text-align: left; }
+    main .description .stat p.example span {
+      font-size: 1.5rem; }
+  main .description .stat p.desc {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 80px;
+    margin-bottom: 80px; } }

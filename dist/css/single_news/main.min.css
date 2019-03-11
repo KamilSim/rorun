@@ -1,0 +1,22 @@
+main .news.articles.single .below {
+  font-size: 1.3rem; }
+
+main .news.articles.single .article {
+  padding-top: 30px;
+  text-align: left;
+  font-size: 1.7rem; }
+
+main .news.articles.single .news-panel.plain {
+  margin-bottom: 0;
+  margin-top: 70px;
+  padding: 0; }
+  main .news.articles.single .news-panel.plain .news-item::after {
+    background-color: white; }
+
+main .news.articles.single .news-panel .news-item {
+  padding-top: 0px; }
+
+main .news.articles.single .photo-lg {
+  width: 100%;
+  height: auto;
+  margin-top: 30px; }

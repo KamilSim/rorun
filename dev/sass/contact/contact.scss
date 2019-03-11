@@ -1,0 +1,59 @@
+$main_green: #39a38f;
+$white: #f0f0f0;
+$gray_light: #d8d8d8;
+$gray_medium: #979797;
+$gray_dark: #707070;
+$black: #2f2f2f;
+
+header {
+    .banner {
+        &.contact {
+            background-image: url('../../assets/graphic/contact/background_image.jpg');
+        
+            h1 {
+                font-size: 5rem;
+            }
+        }
+
+        
+    }
+}
+
+
+main {
+    .contact.card {
+        .map-wrapper {
+            height: 1080px;
+            .form-wrapper{
+                form {
+                    .address {
+                        text-align: left;
+                        font-size: 1.3rem;
+
+                        h3 {
+                            font-size: 2rem;
+                            font-weight: 800;
+                            margin-bottom: 20px;
+                        }
+                        p {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 800px ) {
+  
+  
+    main {
+        .contact.card {
+            .map-wrapper {
+                height: 1200px;
+            }
+        }
+    }
+
+}

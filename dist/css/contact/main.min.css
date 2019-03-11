@@ -1,0 +1,20 @@
+header .banner.contact {
+  background-image: url("../../assets/graphic/contact/background_image.jpg"); }
+  header .banner.contact h1 {
+    font-size: 5rem; }
+
+main .contact.card .map-wrapper {
+  height: 1080px; }
+  main .contact.card .map-wrapper .form-wrapper form .address {
+    text-align: left;
+    font-size: 1.3rem; }
+    main .contact.card .map-wrapper .form-wrapper form .address h3 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 20px; }
+    main .contact.card .map-wrapper .form-wrapper form .address p {
+      margin-top: 20px; }
+
+@media screen and (min-width: 800px) {
+  main .contact.card .map-wrapper {
+    height: 1200px; } }

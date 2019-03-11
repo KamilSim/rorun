@@ -1,0 +1,120 @@
+$main_green: #39a38f;
+$white: #f0f0f0;
+$gray_light: #d8d8d8;
+$gray_medium: #979797;
+$gray_dark: #707070;
+$black: #2f2f2f;
+
+header {
+    .banner {
+        &.about {
+            background-image: url('../../assets/graphic/about/background_image.jpg');
+        
+            h1 {
+                font-size: 5rem;
+            }
+        }
+
+        
+    }
+}
+
+main {
+    .description {
+        p.below {
+            font-size: 1.5rem;
+            margin-bottom: 50px;
+        }
+        .stat {
+
+            .phone {
+                text-align: center;
+            }
+            
+            p.example {
+                color: $main_green;
+                font-size: 6rem;
+                font-weight: 800;
+                margin-top: 50px;
+                text-align: center;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                span { 
+                    font-size: 2rem;
+                    color: $gray_light;
+                    // margin-left: 4px;
+                }
+            }
+            p.desc {
+                text-align: left;
+                font-size: 1.5rem;
+                margin-top: 40px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+
+    .news.about {
+
+        .news-panel {
+            padding-top: 50px;
+            padding-bottom: 30px;
+            .news-item {
+                margin-bottom: 30px;
+            }
+           
+        }
+
+        .team-info {
+            text-align: left;
+            font-size: 1.5rem;
+            margin-top: 80px;
+            margin-bottom: 60px;
+        }
+    }
+
+    .joinus.about {
+        .quote {
+            margin-top: 110px;
+            button { 
+                padding: 5px 40px;
+            }
+        }
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 800px ) {
+  
+  
+    main .description .stat {
+
+        .phone {
+            text-align: right;
+            padding-right: 70px;
+        }
+    
+        p.example { 
+        
+            margin-top: 80px;
+            font-size: 4rem;
+            text-align: left;
+            span {
+                font-size: 1.5rem;
+            }
+    
+        }
+        p.desc {
+            text-align: left;
+            font-size: 1.5rem;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+  }
+
+}

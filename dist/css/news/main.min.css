@@ -1,0 +1,28 @@
+header .banner.news {
+  background-image: url("../../assets/graphic/news/background_image.jpg"); }
+  header .banner.news h1 {
+    font-size: 5rem; }
+
+main .news.articles .news-panel {
+  background-color: white; }
+  main .news.articles .news-panel::before {
+    border: 0; }
+  main .news.articles .news-panel .news-item {
+    margin-bottom: 40px; }
+
+main .news.articles .more-bt {
+  border: none;
+  background-color: #39a38f;
+  color: white;
+  border-radius: 0;
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 80px;
+  width: 60%; }
+
+@media screen and (min-width: 800px) {
+  header .banner.news h1 {
+    font-size: 10rem; }
+  main .news.articles .more-bt {
+    width: 30%; } }
